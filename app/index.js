@@ -75,9 +75,10 @@ class PieceGenerator extends Generator {
       this.templatePath('src/piece.js'),
       this.destinationPath('src/piece.js')
     );
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('CHANGELOG.md'),
-      this.destinationPath('CHANGELOG.md')
+      this.destinationPath('CHANGELOG.md'),
+      this.props
     );
     this.fs.copy(
       this.templatePath('eslintignore'),
