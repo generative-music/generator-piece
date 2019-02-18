@@ -1,0 +1,32 @@
+{
+  "name": "@generative-music/generator-piece",
+  "version": "0.0.0",
+  "description": "A Yeoman generator for Generative.fm pieces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generative-music/generator-piece.git"
+  },
+  "keywords": [
+    "generative.fm",
+    "piece",
+    "generator"
+  ],
+  "author": "Alex Bainter <alexbainter+github@gmail.com> (https://alexbainter.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generative-music/generator-piece/issues"
+  },
+  "homepage": "https://github.com/generative-music/generator-piece#readme",
+  "dependencies": {
+    "yeoman-generator": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-metalex9": "^0.3.0",
+    "prettier": "^1.16.4"
+  }
+}
