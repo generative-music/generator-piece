@@ -42,6 +42,7 @@ class PieceGenerator extends Generator {
         lint: 'eslint .',
         preversion: 'npm run lint',
         postversion: 'git push && git push --tags',
+        prepublishOnly: 'npm run build',
       },
       repository: {
         type: 'git',
