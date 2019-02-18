@@ -87,6 +87,11 @@ class PieceGenerator extends Generator {
       this.templatePath('eslintrc'),
       this.destinationPath('.eslintrc')
     );
+    this.fs.copy(
+      this.templatePath('gitignore'),
+      this.destinationPath('.gitignore')
+    );
+    this.fs.copy(this.templatePath('npmrc'), this.destinationPath('.npmrc'));
     this.fs.copyTpl(
       this.templatePath('piece.gfm.manifest.json'),
       this.destinationPath(manifestName),
