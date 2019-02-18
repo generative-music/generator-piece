@@ -31,16 +31,18 @@ class PieceGenerator extends Generator {
     });
   }
   writing() {
-    this.something();
     const manifestName = `${this.props.id}.gfm.manifest.json`;
     const pkgJson = {
+      name: `piece-${this.props.id}`,
+      main: 'dist/piece.js',
+      module: 'dist/piece.js',
+      generativeFmManifest: manifestName,
       scripts: {
         build: 'rollup -c',
         lint: 'eslint .',
         preversion: 'npm run lint',
         postversion: 'git push && git push --tags',
       },
-      generativeFmManifest: manifestName,
       repository: {
         type: 'git',
         url: `git+https://github.com/generative-music/piece-${
@@ -74,6 +76,10 @@ class PieceGenerator extends Generator {
       this.destinationPath('src/piece.js')
     );
     this.fs.copy(
+      this.templatePath('CHANGELOG.md'),
+      this.destinationPath('CHANGELOG.md')
+    );
+    this.fs.copy(
       this.templatePath('eslintignore'),
       this.destinationPath('.eslintignore')
     );
@@ -84,6 +90,11 @@ class PieceGenerator extends Generator {
     this.fs.copyTpl(
       this.templatePath('piece.gfm.manifest.json'),
       this.destinationPath(manifestName),
+      this.props
+    );
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
       this.props
     );
     this.fs.copy(
