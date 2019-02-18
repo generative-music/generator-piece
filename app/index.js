@@ -33,7 +33,7 @@ class PieceGenerator extends Generator {
   writing() {
     const manifestName = `${this.props.id}.gfm.manifest.json`;
     const pkgJson = {
-      name: `piece-${this.props.id}`,
+      name: `@generative-music/piece-${this.props.id}`,
       main: 'dist/piece.js',
       module: 'dist/piece.js',
       generativeFmManifest: manifestName,
