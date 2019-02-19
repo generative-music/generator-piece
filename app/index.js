@@ -99,6 +99,10 @@ class PieceGenerator extends Generator {
       this.destinationPath(manifestName),
       this.props
     );
+    this.fs.copy(
+      this.templatePath('prettierrc'),
+      this.destinationPath('.prettierrc')
+    );
     this.fs.copyTpl(
       this.templatePath('README.md'),
       this.destinationPath('README.md'),
