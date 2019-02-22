@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2019-02-22
+
+### Added
+
+- Add `tone` and `@generative-music/samples.generative.fm` as peer dependencies in generated projects
+
 ## [0.2.1] - 2019-02-18
 
 ### Fixed
@@ -35,8 +41,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v0.2.1...HEAD
-[0.2.1]: https://github.com/generative-music/generator-piece/compare/v0.1.1...0.2.1
-[0.2.0]: https://github.com/generative-music/generator-piece/compare/v0.1.1...0.2.0
-[0.1.1]: https://github.com/generative-music/generator-piece/compare/v0.1.0...0.1.1
-[0.1.0]: https://github.com/generative-music/generator-piece/compare/v0.0.1...0.1.0
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/generative-music/generator-piece/compare/v0.2.1...v0.3.0
+[0.2.1]: https://github.com/generative-music/generator-piece/compare/v0.1.1...v0.2.1
+[0.2.0]: https://github.com/generative-music/generator-piece/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/generative-music/generator-piece/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/generative-music/generator-piece/compare/v0.0.1...v0.1.0
