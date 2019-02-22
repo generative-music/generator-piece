@@ -41,7 +41,6 @@ class PieceGenerator extends Generator {
         build: 'rollup -c',
         lint: 'eslint .',
         preversion: 'npm run lint',
-        postversion: 'git push && git push --tags',
         prepublishOnly: 'npm run build',
       },
       repository: {
@@ -62,10 +61,6 @@ class PieceGenerator extends Generator {
       homepage: `https://github.com/generative-music/piece-${
         this.props.id
       }#readme`,
-      peerDependencies: {
-        tone: '^13.4.9',
-        '@generative-music/samples.generative.fm': '^1.2.0',
-      },
     };
     this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
     this.fs.copy(
