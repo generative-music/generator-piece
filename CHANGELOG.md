@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2019-03-24
+
+## Added
+
+- `tone` and `@generative-music/samples.generative.fm` are now both peer and dev dependencies in generated projects
+
+### Changed
+
+- Tons of other changes to coincide with [generative-music/pieces-alex-bainter](https://github.com/generative-music/pieces-alex-bainter) which now lints and builds at a top level rather than each package individually
+
 ## [0.4.0] - 2019-02-22
 
 ### Changed
@@ -47,7 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/generative-music/generator-piece/compare/v0.4.0...v1.0.0
 [0.3.0]: https://github.com/generative-music/generator-piece/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/generative-music/generator-piece/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/generative-music/generator-piece/compare/v0.1.1...v0.2.1
