@@ -7,9 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2019-03-31
+
+### Fixed
+
+- Generated \*.gfm.manifest.json files will point to `./dist/esm.js` as the `makePiece` property
+
+### Added
+
+- Generated package.json files will have a version field with a value of `0.0.0`
+- Generated piece.js has `sampleSource = {}` as a parameter
+- Generated piece.js fetches sample file and sets Tone's context if necessary
+
 ## [1.0.0] - 2019-03-24
 
-## Added
+### Added
 
 - `tone` and `@generative-music/samples.generative.fm` are now both peer and dev dependencies in generated projects
 
@@ -57,9 +69,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/generative-music/generator-piece/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/generative-music/generator-piece/compare/v0.4.0...v1.0.0
-[0.3.0]: https://github.com/generative-music/generator-piece/compare/v0.3.0...v0.4.0
+[0.4.0]: https://github.com/generative-music/generator-piece/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/generative-music/generator-piece/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/generative-music/generator-piece/compare/v0.1.1...v0.2.1
 [0.2.0]: https://github.com/generative-music/generator-piece/compare/v0.1.1...v0.2.0
