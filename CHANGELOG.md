@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Generated piece.js has `sampleSource = {}` as a parameter
 - Generated piece.js fetches sample file and sets Tone's context if necessary
 
+### Changed
+
+- Update `@generative-music/samples.generative.fm` peer dependency in generated projects to `^1.7.0`
+
 ## [1.0.0] - 2019-03-24
 
 ### Added
