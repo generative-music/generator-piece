@@ -1,6 +1,6 @@
 {
   "title": "<%= title %>",
-  "makePiece": "./dist/piece.js",
+  "makePiece": "./dist/esm.js",
   "image": "./image.png",
   "id": "<%= id %>",
   "artistId": "alex-bainter"
