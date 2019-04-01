@@ -28,6 +28,7 @@ class PieceGenerator extends Generator {
       name: `@generative-music/piece-${this.props.id}`,
       main: 'dist/cjs.js',
       module: 'dist/esm.js',
+      version: '0.0.0',
       generativeFmManifest: manifestName,
       repository: {
         type: 'git',
