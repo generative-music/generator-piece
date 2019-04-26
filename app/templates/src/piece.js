@@ -13,9 +13,9 @@ const makePiece = ({
         Tone.setContext(audioContext);
       }
       // create piece
-      return Promise.resolve(() => {
+      return () => {
         // clean up
-      });
+      };
     }
   );
 
