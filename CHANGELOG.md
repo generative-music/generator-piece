@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+(none)
+
 ## [1.3.0] - 2019-05-03
+
+### Added
+
+- Add `isRecordable` field to generated gfm.manifest file
 
 ### Changed
 
