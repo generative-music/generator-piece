@@ -42,9 +42,9 @@ class PieceGenerator extends Generator {
         url: 'https://github.com/generative-music/pieces-alex-bainter/issues',
       },
       homepage:
-        'https://github.com/generative-music/piece-s-alex-bainter#readme',
+        'https://github.com/generative-music/pieces-alex-bainter#readme',
       peerDependencies: {
-        '@generative-music/samples.generative.fm': '^1.7.0',
+        '@generative-music/samples.generative.fm': '^1.8.0',
         tone: '^13.4.9',
       },
       publishConfig: {
