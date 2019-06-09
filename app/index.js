@@ -17,9 +17,15 @@ class PieceGenerator extends Generator {
         message: 'Piece id',
         type: 'input',
       },
+      {
+        name: 'tags',
+        message: 'Piece tags (comma separated)',
+        type: 'input',
+      },
     ];
     return this.prompt(prompts).then(props => {
-      this.props = Object.assign({}, this.props, props);
+      const tags = props.tags.split(',').map(tag => tag.trim());
+      this.props = Object.assign({}, this.props, props, { tags });
     });
   }
   writing() {
@@ -82,7 +88,7 @@ class PieceGenerator extends Generator {
     );
   }
   install() {
-    this.npmInstall(devDependencies, { 'save-dev': true });
+    //this.npmInstall(devDependencies, { 'save-dev': true });
   }
 }
 

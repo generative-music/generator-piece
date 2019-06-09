@@ -1,8 +1,9 @@
 {
-  "title": "<%= title %>",
+  "title": "<%- title %>",
   "makePiece": "./dist/esm.js",
   "image": "./image.png",
-  "id": "<%= id %>",
+  "id": "<%- id %>",
   "artistId": "alex-bainter",
-  "isRecordable": true
+  "isRecordable": true,
+  "tags": [<%- tags.map(tag => `"${tag}"`) %>]
 }
