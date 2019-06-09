@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 (none)
 
+## [1.6.0] - 2019-06-09
+
+### Added
+
+- Prompt for piece tags and store the result in the generated gfm.manifest file
+
+### Changed
+
+- Update `@generative-music/samples.generative.fm` peer dependency in generated projects to `^1.11.1`
+
 ## [1.5.0] - 2019-05-26
 
 ### Changed
@@ -103,7 +113,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.5.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/generative-music/generator-piece/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/generative-music/generator-piece/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/generative-music/generator-piece/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/generative-music/generator-piece/compare/v1.2.0...v1.3.0
