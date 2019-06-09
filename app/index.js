@@ -50,7 +50,7 @@ class PieceGenerator extends Generator {
       homepage:
         'https://github.com/generative-music/pieces-alex-bainter#readme',
       peerDependencies: {
-        '@generative-music/samples.generative.fm': '^1.10.0',
+        '@generative-music/samples.generative.fm': '^1.11.1',
         tone: '^13.4.9',
       },
       publishConfig: {
@@ -88,7 +88,7 @@ class PieceGenerator extends Generator {
     );
   }
   install() {
-    //this.npmInstall(devDependencies, { 'save-dev': true });
+    this.npmInstall(devDependencies, { 'save-dev': true });
   }
 }
 
