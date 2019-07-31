@@ -22,10 +22,20 @@ class PieceGenerator extends Generator {
         message: 'Piece tags (comma separated)',
         type: 'input',
       },
+      {
+        name: 'releaseDate',
+        message: 'Release date (MM/DD/YYYY)',
+        type: 'input',
+      },
     ];
     return this.prompt(prompts).then(props => {
       const tags = props.tags.split(',').map(tag => tag.trim());
-      this.props = Object.assign({}, this.props, props, { tags });
+      const releaseDate = new Date(props.releaseDate);
+      releaseDate.setUTCHours(0);
+      this.props = Object.assign({}, this.props, props, {
+        tags,
+        releaseDate: releaseDate.toISOString(),
+      });
     });
   }
   writing() {
@@ -50,7 +60,7 @@ class PieceGenerator extends Generator {
       homepage:
         'https://github.com/generative-music/pieces-alex-bainter#readme',
       peerDependencies: {
-        '@generative-music/samples.generative.fm': '^1.13.0',
+        '@generative-music/samples.generative.fm': '^1.14.0',
         tone: '^13.4.9',
       },
       publishConfig: {
