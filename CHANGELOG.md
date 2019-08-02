@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 (none)
 
+## [1.9.0] - 2019-08-02
+
+### Changed
+
+- Update `@generative-music/samples.generative.fm` peer dependency in generated projects to `^1.15.0`
+
 ## [1.8.0] - 2019-07-31
 
 ### Added
@@ -129,7 +135,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.8.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.9.0...HEAD
+[1.9.0]: https://github.com/generative-music/generator-piece/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/generative-music/generator-piece/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/generative-music/generator-piece/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/generative-music/generator-piece/compare/v1.5.0...v1.6.0
