@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-(none)
+### Added
+
+- Prompt for visualization type and store the result in the generated gfm.manifest file
 
 ## [1.9.0] - 2019-08-02
 
