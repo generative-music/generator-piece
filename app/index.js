@@ -27,6 +27,13 @@ class PieceGenerator extends Generator {
         message: 'Release date (MM/DD/YYYY)',
         type: 'input',
       },
+      {
+        name: 'visualizationType',
+        message: 'Visualization Type',
+        type: 'list',
+        choices: ['squareCut', 'partialLattice'],
+        default: 'squareCut',
+      },
     ];
     return this.prompt(prompts).then(props => {
       const tags = props.tags.split(',').map(tag => tag.trim());

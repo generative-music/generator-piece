@@ -6,5 +6,6 @@
   "artistId": "alex-bainter",
   "isRecordable": true,
   "tags": [<%- tags.map(tag => `"${tag}"`) %>],
-  "releaseDate": "<%- releaseDate %>"
+  "releaseDate": "<%- releaseDate %>",
+  "visualizationType": "<%- visualizationType %>"
 }
