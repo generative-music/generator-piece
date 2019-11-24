@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 (none)
 
+## [1.15.0] - 2019-11-24
+
+### Changed
+
+- Update `@generative-music/samples.generative.fm` peer dependency in generated projects to `^1.22.0`
+
 ## [1.14.0] - 2019-11-10
 
 ### Changed
