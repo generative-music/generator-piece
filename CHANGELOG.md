@@ -181,7 +181,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.14.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.16.0...HEAD
+[1.16.0]: https://github.com/generative-music/generator-piece/compare/v1.15.0...v1.16.0
+[1.15.0]: https://github.com/generative-music/generator-piece/compare/v1.14.0...v1.15.0
 [1.14.0]: https://github.com/generative-music/generator-piece/compare/v1.13.0...v1.14.0
 [1.13.0]: https://github.com/generative-music/generator-piece/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/generative-music/generator-piece/compare/v1.11.0...v1.12.0
