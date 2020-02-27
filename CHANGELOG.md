@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 (none)
 
+## [2.0.0] - 2020-02-26
+
+### Removed
+
+- `@generative-music/samples.generative.fm` is no longer a peer dependency of generated projects
+
+### Added
+
+- Prompt for sample names and add to generated manifest
+
+### Changed
+
+- Generated piece file conforms to new piece config interface
+
 ## [1.16.0] - 2020-01-20
 
 ### Changed
@@ -181,7 +195,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated projects will automatically have their dependencies added to the rollup externals config
 
-[unreleased]: https://github.com/generative-music/generator-piece/compare/v1.16.0...HEAD
+[unreleased]: https://github.com/generative-music/generator-piece/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/generative-music/generator-piece/compare/v1.16.0...v2.0.0
 [1.16.0]: https://github.com/generative-music/generator-piece/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/generative-music/generator-piece/compare/v1.14.0...v1.15.0
 [1.14.0]: https://github.com/generative-music/generator-piece/compare/v1.13.0...v1.14.0
