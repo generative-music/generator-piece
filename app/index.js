@@ -34,13 +34,20 @@ class PieceGenerator extends Generator {
         choices: ['squareCut', 'partialLattice'],
         default: 'squareCut',
       },
+      {
+        name: 'sampleNames',
+        message: 'Sample names (comma separated)',
+        type: 'input',
+      },
     ];
     return this.prompt(prompts).then(props => {
       const tags = props.tags.split(',').map(tag => tag.trim());
+      const sampleNames = props.sampleNames.split(',').map(name => name.trim());
       const releaseDate = new Date(props.releaseDate);
       releaseDate.setUTCHours(0);
       this.props = Object.assign({}, this.props, props, {
         tags,
+        sampleNames,
         releaseDate: releaseDate.toISOString(),
       });
     });
@@ -58,8 +65,7 @@ class PieceGenerator extends Generator {
         url: 'git+https://github.com/generative-music/pieces-alex-bainter.git',
       },
       files: ['dist', 'image.png', `${manifestName}`],
-      author:
-        'Alex Bainter <alexbainter+github@gmail.com> (https://alexbainter.com)',
+      author: 'Alex Bainter <alex@alexbainter.com> (https://alexbainter.com)',
       license: 'MIT',
       bugs: {
         url: 'https://github.com/generative-music/pieces-alex-bainter/issues',

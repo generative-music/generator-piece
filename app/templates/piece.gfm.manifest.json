@@ -7,5 +7,6 @@
   "isRecordable": true,
   "tags": [<%- tags.map(tag => `"${tag}"`) %>],
   "releaseDate": "<%- releaseDate %>",
-  "visualizationType": "<%- visualizationType %>"
+  "visualizationType": "<%- visualizationType %>",
+  "sampleNames": [<%- sampleNames.map(name => `"${name}"`) %>]
 }
