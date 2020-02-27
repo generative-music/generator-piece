@@ -2,7 +2,7 @@
 
 const Generator = require('yeoman-generator');
 
-const devDependencies = ['@generative-music/samples.generative.fm', 'tone'];
+const devDependencies = ['tone'];
 
 class PieceGenerator extends Generator {
   prompting() {
@@ -73,7 +73,6 @@ class PieceGenerator extends Generator {
       homepage:
         'https://github.com/generative-music/pieces-alex-bainter#readme',
       peerDependencies: {
-        '@generative-music/samples-alex-bainter': '^1.1.0',
         tone: '^13.8.25',
       },
       publishConfig: {
