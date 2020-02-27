@@ -73,8 +73,8 @@ class PieceGenerator extends Generator {
       homepage:
         'https://github.com/generative-music/pieces-alex-bainter#readme',
       peerDependencies: {
-        '@generative-music/samples.generative.fm': '^1.23.0',
-        tone: '^13.4.9',
+        '@generative-music/samples-alex-bainter': '^1.1.0',
+        tone: '^13.8.25',
       },
       publishConfig: {
         access: 'public',
